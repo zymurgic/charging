@@ -15,31 +15,32 @@ that may list them. Uncertain.
 
 It will also return a number of outlets of each type:
 
-LocationId string	hexadecimal with hyphens - unique id for the location
-LocationDescription string	abbreviated address, unstructured, no postcodes
-Latitude in decimal degrees
-Longitude in decimal degrees
-
-TotalChargepoints int
-TotalChademo	int
-TotalCcs	int
-TotalRapidAc	int
-TotalFastAc	int
-TotalSlowAc	int
-InUseChademo	int
-InUseCcs	int
-InUseRapidAc	int
-InUseFastAc	int
-InUseSlowAc	int
-FailedChademo	int
-FailedCcs	int
-FailedRapidAc	int
-FailedFastAc	int
-FailedSlowAc	int
-RapidConnectors	int
-FastConnectors	int
-SlowConnectors	int
-PostIds	array of post identifier strings
+| Field | Datatype | Description |
+|------ | -------- | ----------- |
+| LocationId | string | hexadecimal with hyphens - unique id for the location |
+| LocationDescription | string | abbreviated address, unstructured, no postcodes |
+| Latitude | real | in decimal degrees |
+| Longitude | real | in decimal degrees |
+| TotalChargepoints | int | |
+| TotalChademo | int | |
+| TotalCcs | int | |
+| TotalRapidAc | int | |
+| TotalFastAc | int | |
+| TotalSlowAc | int | |
+| InUseChademo | int | |
+| InUseCcs | int | |
+| InUseRapidAc | int | |
+| InUseFastAc | int | |
+| InUseSlowAc | int | |
+| FailedChademo | int | |
+| FailedCcs | int | |
+| FailedRapidAc | int | |
+| FailedFastAc | int | |
+| FailedSlowAc | int | |
+| RapidConnectors | int | |
+| FastConnectors | int | |
+| SlowConnectors | int | |
+| PostIds | array | array of post identifier strings |
 
 
 ### Location details
@@ -47,7 +48,7 @@ PostIds	array of post identifier strings
 HTTPS GET https://www.cpsgenie.com/ds/map/LocationDetailDialogContent/d92c9324-ff94-d711-21d0-f58001d34801/locationModal
 ```
 returns an HTML formatted table of deatails about a given location ID.
-#locationModalTitle	This is the same as the LocationDescription, but with an added ' - ' then a postcode
+locationModalTitle	This is the same as the LocationDescription, but with an added ' - ' then a postcode
 
 There isn an HTML DIV for each the Post Ids at that location, the ID being the Post Id.
 For multi-headed chargers, it's one row per simultaneously available outputs, so CCS and Chademo are grouped together on APT rapid chargers, because using the CCS will mean that the Chademo is unavailable, and vice-versa, but the Rapid AC is still available.
