@@ -54,13 +54,15 @@ locationModalTitle	This is the same as the LocationDescription, but with an adde
 
 There isn an HTML DIV for each the Post Ids at that location, the ID being the Post Id.
 For multi-headed chargers, it's one row per simultaneously available outputs, so CCS and Chademo are grouped together on APT rapid chargers, because using the CCS will mean that the Chademo is unavailable, and vice-versa, but the Rapid AC is still available.
+
+| Field | Description | 
+| ------| ----------- |
 | No	|connector number
-|------ |---------
-|Type	|Type of connector: One of |
+| Type	|Type of connector: One of |
 |	|	|
 |	|43 Kw AC Cable<br>|50 Kw DC Chademo and Combo (CCS) Cable<br>7 Kw AC Socket|
-|Cost	|is cost of charge, in text, no longer abstracted into 'units', but given in pounds sterling|
-|Status |Realtime status of the charge outlet, seems to have two spans, one abbreviated, and one long : One of<br>Available<br>In Use |
+| Cost	|is cost of charge, in text, no longer abstracted into 'units', but given in pounds sterling|
+| Status |Realtime status of the charge outlet, seems to have two spans, one abbreviated, and one long : One of<br>Available<br>In Use |
 	
 Action	There is a startCharge link, more of that later.
 
