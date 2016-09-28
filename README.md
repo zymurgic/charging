@@ -13,7 +13,7 @@ This will return a JSON formatted output, Chargepoint Services group charge poin
 It will only list locations that are publicly visible - the private schemes they run for companies like Microsoft are not listed, there may be hidden parameters to provide scheme identifiers
 that may list them. Uncertain.
 
-The GWR scheme locations (at a small number of railway stations) are made visibile if you provide a cookie as though you were logged in to their web site. If you are not logged in, the GWR scheme locations are not shown. If you are, they are. Why this behaviour is exhibited by Chargepoint Services for public charging is unknown. For private charging schemes (microsoft,oracle,NATS), it makes sense.
+The GWR scheme locations (at a small number of railway stations) are made visibile if you provide a cookie as though you were logged in to their web site. If you are not logged in, the GWR scheme locations are not shown. If you are, they are. Why this behaviour is exhibited by Chargepoint Services for public charging is unknown. For private charging schemes (Microsoft,Oracle,NATS), it makes sense.
 
 It will also return a number of outlets of each type:
 
@@ -54,16 +54,13 @@ locationModalTitle	This is the same as the LocationDescription, but with an adde
 
 There isn an HTML DIV for each the Post Ids at that location, the ID being the Post Id.
 For multi-headed chargers, it's one row per simultaneously available outputs, so CCS and Chademo are grouped together on APT rapid chargers, because using the CCS will mean that the Chademo is unavailable, and vice-versa, but the Rapid AC is still available.
-No	connector number
-Type	Type of connector: One of
-	43 Kw AC Cable
-	50 Kw DC Chademo and Combo (CCS) Cable
-	7 Kw AC Socket
-Cost	is cost of charge, in text, no longer abstracted into 'units', but given in pounds sterling
-Status	Realtime status of the charge outlet, seems to have two spans, one abbreviated, and one long : One of
-	Available
-	In Use
-	
+| No	|connector number
+|------ |---------
+|Type	|Type of connector: One of |
+|	|	|
+|	|43 Kw AC Cable<br>|50 Kw DC Chademo and Combo (CCS) Cable<br>7 Kw AC Socket|
+|Cost	|is cost of charge, in text, no longer abstracted into 'units', but given in pounds sterling|
+|Status |Realtime status of the charge outlet, seems to have two spans, one abbreviated, and one long : One of<br>Available<br>In Use |
 	
 Action	There is a startCharge link, more of that later.
 
