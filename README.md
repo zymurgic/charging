@@ -57,12 +57,11 @@ For multi-headed chargers, it's one row per simultaneously available outputs, so
 
 | Field | Description | 
 | ------| ----------- |
-| No	|connector number
-| Type	|Type of connector: One of |
-|	|	|
-|	|43 Kw AC Cable<br>|50 Kw DC Chademo and Combo (CCS) Cable<br>7 Kw AC Socket|
-| Cost	|is cost of charge, in text, no longer abstracted into 'units', but given in pounds sterling|
-| Status |Realtime status of the charge outlet, seems to have two spans, one abbreviated, and one long : One of<br>Available<br>In Use |
+| No	| connector number
+| Type	| Type of connector: One of |
+|	| 43 Kw AC Cable<br>|50 Kw DC Chademo and Combo (CCS) Cable<br>7 Kw AC Socket|
+| Cost	| is cost of charge, in text, no longer abstracted into 'units', but given in pounds sterling|
+| Status | Realtime status of the charge outlet, seems to have two spans, one abbreviated, and one long : One of<br>Available<br>In Use |
 	
 Action	There is a startCharge link, more of that later.
 
