@@ -13,6 +13,8 @@ This will return a JSON formatted output, Chargepoint Services group charge poin
 It will only list locations that are publicly visible - the private schemes they run for companies like Microsoft are not listed, there may be hidden parameters to provide scheme identifiers
 that may list them. Uncertain.
 
+The GWR scheme locations (at a small number of railway stations) are made visibile if you provide a cookie as though you were logged in to their web site. If you are not logged in, the GWR scheme locations are not shown. If you are, they are. Why this behaviour is exhibited by Chargepoint Services for public charging is unknown. For private charging schemes (microsoft,oracle,NATS), it makes sense.
+
 It will also return a number of outlets of each type:
 
 | Field | Datatype | Description |
